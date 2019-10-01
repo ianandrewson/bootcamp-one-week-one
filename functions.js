@@ -1,7 +1,7 @@
 export const isYes = userResponse => {
     if (userResponse === 'yes' || userResponse === 'y' || userResponse === 'yup' || userResponse === 'yea' || userResponse === 'yeah' || userResponse === 'ya' || userResponse === 'jo') return true;
     return false;
-}
+};
 
 export const checkAnswer = (questionNumber, userInput) => {
     if (questionNumber === 1 && isYes(userInput)) {

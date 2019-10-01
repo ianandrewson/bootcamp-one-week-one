@@ -1,5 +1,3 @@
-
-import { isYes } from './functions.js';
 import { checkAnswer } from './functions.js';
 
 const myButton = document.getElementById('action-button');
@@ -34,7 +32,7 @@ myButton.onclick = () => {
         alert('Wrong');
     }
 
-    alert(`You have finished the quiz, ${userName}! The results will now be displayed.`)
+    alert(`You have finished the quiz, ${userName}! The results will now be displayed.`);
 
-    answerField.textContent = `You got ${score} correct.`
+    answerField.textContent = `You got ${score} correct.`;
 };
