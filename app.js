@@ -1,5 +1,7 @@
 
-import { isCorrect } from './test/functions.js/index.js';
+import { isYes } from './functions.js';
+import { checkAnswer } from './functions.js';
+
 
 const myButton = document.getElementById('action-button');
 
@@ -9,7 +11,7 @@ myButton.onclick = () => {
     // const myConfirmation = confirm('Do you want to take my quiz?');
     // console.log(myConfirmation);
     const question1 = prompt('What is my favorite color?').toLowerCase().trim();
-    if (isCorrect(1, question1)) {
+    if (checkAnswer(1, question1)) {
         alert('Correct!');
     } else {
         alert('Wrong');
