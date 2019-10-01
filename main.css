@@ -1,29 +1,46 @@
 .gear-pic {
     border-radius: 10px;
-    height: 200px;
-    width: 300px;
+    height: 400px;
+    width: 600px;
+    grid-column: 2;
+
 }
 
+body {
+    background-color:  rgb(170,143,126);
+}
+
+li{
+    grid-column: 2;
+}
 .gear-list{
-
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
 }
 
-.denmark{
-
-}
-
-.music{
-
-}
-
-.overview{
-
+p {
+    font-family: 'Merriweather', serif;
+    padding: 10px;
+    background-color: rgb(190,126,15);
 }
 
 h1 {
-
+    font-family: 'Noto Serif', serif;
+    background-color: rgb(229,59,6);
 }
 
 h2 {
-    
+    font-family: 'Noto Serif', serif;
+    background-color: rgb(198,97,11);
+}
+
+button {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: red;
+    border: none;
 }
