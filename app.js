@@ -34,5 +34,12 @@ myButton.onclick = () => {
 
     alert(`You have finished the quiz, ${userName}! The results will now be displayed.`);
 
-    answerField.textContent = `You got ${score} correct.`;
+    answerField.textContent = `You got ${score} correct, a score of ${Math.floor(score / 3 * 100)}%`;
+    if (score < 2) {
+        answerField.style.cssText = 'color: red';
+    } else if (score === 2) {
+        answerField.style.cssText = 'color: gold';
+    } else {
+        answerField.style.cssText = 'color: green';
+    }
 };

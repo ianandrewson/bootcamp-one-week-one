@@ -12,6 +12,8 @@ body {
 
 li{
     grid-column: 2;
+    margin: 10px;
+    font-weight: thick;
 }
 .gear-list{
     display: grid;
